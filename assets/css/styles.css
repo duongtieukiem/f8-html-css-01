@@ -51,17 +51,28 @@ a {
 }
 
 /* Header */
-.header {
-    position: relative;
+.fixed-header {
+    padding: 26px;
     background: #e6f0ff;
-    height: 87vh;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.Hero-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #e6f0ff;
+    height: 100vh;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
+
 .navbar ul {
     display: flex;
     margin-left: 50px;
@@ -622,7 +633,7 @@ a {
 }
 
 .footer .social-link:hover {
-    background-color: #7a7a7e;
+    background-color: #ebebeb;
 }
 
 .footer .row-bottom {
